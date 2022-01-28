@@ -3,22 +3,48 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "postinstall": "copy-avm-public public",
+    "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@ceramicnetwork/3id-did-resolver": "^1.4.16",
+    "@ceramicnetwork/http-client": "^1.5.7",
+    "@ceramicnetwork/stream-tile": "^1.5.7",
+    "@fluencelabs/avm-runner-background": "^0.1.2",
+    "@fluencelabs/fluence": "^0.18.0",
+    "@luxdamore/vue-css-doodle": "^1.0.1",
+    "api": "^4.2.0",
+    "axios": "^0.25.0",
+    "bignumber.js": "^9.0.2",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "dids": "^2.4.3",
+    "dotenv": "^14.3.2",
+    "ether-converter": "^0.0.16",
+    "moment": "^2.29.1",
+    "sweetalert2": "^11.3.6",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuetify": "^2.4.0",
+    "vuex": "^3.0.1",
+    "vuex-persistedstate": "^2.5.4",
+    "web3-utils": "^1.7.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-store": "~0.0.7",
+    "vue-cli-plugin-vuetify": "~2.4.5",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.7.0"
   },
   "eslintConfig": {
     "root": true,
