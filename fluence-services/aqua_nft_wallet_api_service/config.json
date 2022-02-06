@@ -1,0 +1,6 @@
+{
+  "name": "aqua_nft_wallet_api_service",
+  "mountedBinaries": {
+    "curl": "/usr/bin/curl"
+  }
+}

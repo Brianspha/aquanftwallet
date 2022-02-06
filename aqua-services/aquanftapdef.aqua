@@ -1,0 +1,27 @@
+import "@fluencelabs/aqua-lib/builtin.aqua"
+
+const AQUA_NFT_WALLET_API_PEER_ID ?= "12D3KooWSD5PToNiLQwKDXsu8JSysCwUt8BVUJEqCHcDe7P5h45e"
+const AQUA_NFT_WALLET_API_SERVICE_ID ?= "948dcc44-6769-429c-a511-7f17f847e6af"
+service IAquaNFTWalletAPI:
+  get_all_collections_opensea( limit: string, offset: string) -> string
+  get_collection_listing_by_address_opensea( asset_contract_address: string, order_direction: string, limit: string) -> string
+  get(url: string) -> string
+
+func get(url: string) -> string :
+  on AQUA_NFT_WALLET_API_PEER_ID: -- on keyword allows us to specify which node we want the code to be executed on`
+    IAquaNFTWalletAPI AQUA_NFT_WALLET_API_SERVICE_ID -- we initialise the instance by assigning its id
+    results <- IAquaNFTWalletAPI.get(url)
+  <- results
+
+func get_collection_listing_by_address_opensea( asset_contract_address: string, order_direction: string, limit: string) -> string :
+  on AQUA_NFT_WALLET_API_PEER_ID:
+    IAquaNFTWalletAPI AQUA_NFT_WALLET_API_SERVICE_ID
+    collection_listing <- IAquaNFTWalletAPI.get_collection_listing_by_address_opensea(asset_contract_address, order_direction, limit)
+  <- collection_listing
+
+func get_all_collections_opensea(limit: string, offset: string) -> string :
+  on AQUA_NFT_WALLET_API_PEER_ID:
+    IAquaNFTWalletAPI AQUA_NFT_WALLET_API_SERVICE_ID
+    collections <- IAquaNFTWalletAPI.get_all_collections_opensea(limit, offset)
+  <- collections
+

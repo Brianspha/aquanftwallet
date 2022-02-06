@@ -6,7 +6,7 @@ import { SkynetClient } from "skynet-js";
 
 Vue.use(Vuex);
 const client = new SkynetClient("https://siasky.net/");
-console.log(require("../data/opensea.json").collections)
+console.log(require("../data/opensea.json").collections);
 /* eslint-disable no-new */
 const store = new Vuex.Store({
   state: {
@@ -14,27 +14,39 @@ const store = new Vuex.Store({
     userAddress: "",
     primaryColor: "green darken-1",
     secondaryColor: "#699c79",
-    showOpenseaNFTDetailsDialog:false,
-    selectedCollectionOpensea:{},
-    selectedCollectionRarible:{},
-    selectedOpenseaNFT:{},
-    selectedRaribleNFT:{},
-    openseaCollections:[],
-    raribleCollections:[],
-    collectionOpenseaNFTs:[],
-    collectionRaribleNFTs:[]
+    showOpenseaNFTDetailsDialog: false,
+    selectedCollectionOpensea: {},
+    selectedCollectionRarible: {},
+    selectedOpenseaNFT: {},
+    selectedRaribleNFT: {},
+    openseaCollections: [],
+    raribleCollections: [],
+    collectionOpenseaNFTs: [],
+    collectionRaribleNFTs: [],
   },
   plugins: [createPersistedState()],
   modules: {},
   actions: {
-    getopenseaCollectionNFTs:async function(){
-
-    },
+    getopenseaCollectionNFTs: async function() {},
     loadData: async function() {
       console.log("fetching data");
       store.state.isLoading = true;
-      store.state.openseaCollections=require("../data/opensea.json").collections
+      store.state.openseaCollections = require("../data/opensea.json").collections;
+      store.state.openseaCollections = store.state.openseaCollections.filter(
+        (collection) => {
+          console.log("collection: ", collection.primary_asset_contracts);
+          return (
+            collection.primary_asset_contracts.length > 0 &&
+            collection.primary_asset_contracts[0].total_supply != null &&
+            collection.primary_asset_contracts[0].total_supply > 0
+          );
+        }
+      );
       store.state.isLoading = false;
+      console.log(
+        "store.state.openseaCollections: ",
+        store.state.openseaCollections
+      );
     },
     getSkyData: async function() {
       var test = await this.state.skyClient.db.getJSON(

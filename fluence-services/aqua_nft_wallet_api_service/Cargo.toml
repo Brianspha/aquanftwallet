@@ -1,0 +1,16 @@
+[package]
+name = "aqua_nft_wallet_api_service"
+version = "1.0.0"
+edition = "2021"
+authors = ["brianspha <https://github.com/Brianspha>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+marine-rs-sdk ={ version = "0.6.13", features = ["logger"] }
+log = "0.4.8"
+
+[[bin]]
+name = "aqua_nft_wallet_api_service"
+path = "src/main.rs"
+

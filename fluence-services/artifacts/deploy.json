@@ -1,0 +1,16 @@
+{
+    "aqua_nft_wallet_api_service": {
+        "name": "aqua_nft_wallet_api_service",
+        "modules": [
+            {
+              "name": "aqua_nft_wallet_api_service",
+              "path": "./artifacts/aqua_nft_wallet_api_service.wasm",
+              "mounted_binaries": [[[ "curl", "/usr/bin/curl"]]],
+              "mapped_dirs": [],
+              "preopened_files": [],
+              "logger_enabled": [true]
+            }
+        
+          ]
+    }
+}

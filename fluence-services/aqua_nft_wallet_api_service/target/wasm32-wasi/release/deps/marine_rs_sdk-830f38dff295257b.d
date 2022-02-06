@@ -1,0 +1,9 @@
+/Users/siphamandlamjoli/Documents/GitHub/aquanftwallet/fluence-services/aqua_nft_wallet_api_service/target/wasm32-wasi/release/deps/marine_rs_sdk-830f38dff295257b.rmeta: /Users/siphamandlamjoli/.cargo/registry/src/github.com-1ecc6299db9ec823/marine-rs-sdk-0.6.15/src/lib.rs /Users/siphamandlamjoli/.cargo/registry/src/github.com-1ecc6299db9ec823/marine-rs-sdk-0.6.15/src/call_parameters.rs /Users/siphamandlamjoli/.cargo/registry/src/github.com-1ecc6299db9ec823/marine-rs-sdk-0.6.15/src/mounted_binary.rs
+
+/Users/siphamandlamjoli/Documents/GitHub/aquanftwallet/fluence-services/aqua_nft_wallet_api_service/target/wasm32-wasi/release/deps/libmarine_rs_sdk-830f38dff295257b.rlib: /Users/siphamandlamjoli/.cargo/registry/src/github.com-1ecc6299db9ec823/marine-rs-sdk-0.6.15/src/lib.rs /Users/siphamandlamjoli/.cargo/registry/src/github.com-1ecc6299db9ec823/marine-rs-sdk-0.6.15/src/call_parameters.rs /Users/siphamandlamjoli/.cargo/registry/src/github.com-1ecc6299db9ec823/marine-rs-sdk-0.6.15/src/mounted_binary.rs
+
+/Users/siphamandlamjoli/Documents/GitHub/aquanftwallet/fluence-services/aqua_nft_wallet_api_service/target/wasm32-wasi/release/deps/marine_rs_sdk-830f38dff295257b.d: /Users/siphamandlamjoli/.cargo/registry/src/github.com-1ecc6299db9ec823/marine-rs-sdk-0.6.15/src/lib.rs /Users/siphamandlamjoli/.cargo/registry/src/github.com-1ecc6299db9ec823/marine-rs-sdk-0.6.15/src/call_parameters.rs /Users/siphamandlamjoli/.cargo/registry/src/github.com-1ecc6299db9ec823/marine-rs-sdk-0.6.15/src/mounted_binary.rs
+
+/Users/siphamandlamjoli/.cargo/registry/src/github.com-1ecc6299db9ec823/marine-rs-sdk-0.6.15/src/lib.rs:
+/Users/siphamandlamjoli/.cargo/registry/src/github.com-1ecc6299db9ec823/marine-rs-sdk-0.6.15/src/call_parameters.rs:
+/Users/siphamandlamjoli/.cargo/registry/src/github.com-1ecc6299db9ec823/marine-rs-sdk-0.6.15/src/mounted_binary.rs:
