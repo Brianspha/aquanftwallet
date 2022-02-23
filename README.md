@@ -1,5 +1,5 @@
 # aquanftwallet
-
+Deprecated
 ## Project setup
 ```
 npm install
