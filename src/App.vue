@@ -31,14 +31,32 @@
 </template>
 
 <script>
+import { Fluence } from "@fluencelabs/fluence";
+import { krasnodar } from "@fluencelabs/fluence-network-environment";
 export default {
   name: "App",
 
   data: () => ({
     //
   }),
-  beforeMount() {
+  mounted() {
     this.$store.dispatch("loadData");
+
+    this.main();
+  },
+  methods: {
+    main: async function() {
+      await Fluence.start({ connectTo: krasnodar[0] });
+      console.log(
+        "Created a Fluence client with peer id %s and relay id %s",
+        Fluence.getStatus().peerId,
+        Fluence.getStatus().relayPeerId
+      );
+
+      // your code
+
+      await Fluence.stop();
+    },
   },
 };
 </script>

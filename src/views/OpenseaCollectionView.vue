@@ -104,11 +104,14 @@ export default {
           this.$store.state.selectedCollectionOpensea.primary_asset_contracts[0]
             .address
         );
-        const axios = require("axios").default;
-        axios
-          .get(
-            `https://testnets-api.opensea.io/api/v1/assets?&asset_contract_address=${this.$store.state.selectedCollectionOpensea.primary_asset_contracts[0].address}&order_direction=desc&offset=0&limit=50`
-          )
+        const getCollectionByAddressOpensea = require("../services/aquanftwallet")
+          .default.getCollectionByAddressOpensea;
+        getCollectionByAddressOpensea(
+          this.$store.state.selectedCollectionOpensea.primary_asset_contracts[0]
+            .address,
+          "desc",
+          50
+        )
           .then((collection) => {
             console.log("collection found: ", collection);
 

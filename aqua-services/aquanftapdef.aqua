@@ -1,7 +1,7 @@
 import "@fluencelabs/aqua-lib/builtin.aqua"
 
 const AQUA_NFT_WALLET_API_PEER_ID ?= "12D3KooWSD5PToNiLQwKDXsu8JSysCwUt8BVUJEqCHcDe7P5h45e"
-const AQUA_NFT_WALLET_API_SERVICE_ID ?= "948dcc44-6769-429c-a511-7f17f847e6af"
+const AQUA_NFT_WALLET_API_SERVICE_ID ?= "275ba8e1-a7c1-412f-a9bb-7d288343c3ac"
 service IAquaNFTWalletAPI:
   get_all_collections_opensea( limit: string, offset: string) -> string
   get_collection_listing_by_address_opensea( asset_contract_address: string, order_direction: string, limit: string) -> string

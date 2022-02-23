@@ -124,7 +124,7 @@ export function get(...args: any) {
                        )
                        (xor
                         (seq
-                         (call "12D3KooWSD5PToNiLQwKDXsu8JSysCwUt8BVUJEqCHcDe7P5h45e" ("948dcc44-6769-429c-a511-7f17f847e6af" "get") [url] results)
+                         (call "12D3KooWSD5PToNiLQwKDXsu8JSysCwUt8BVUJEqCHcDe7P5h45e" ("275ba8e1-a7c1-412f-a9bb-7d288343c3ac" "get") [url] results)
                          (call -relay- ("op" "noop") [])
                         )
                         (seq
@@ -208,7 +208,7 @@ export function get_collection_listing_by_address_opensea(...args: any) {
                        )
                        (xor
                         (seq
-                         (call "12D3KooWSD5PToNiLQwKDXsu8JSysCwUt8BVUJEqCHcDe7P5h45e" ("948dcc44-6769-429c-a511-7f17f847e6af" "get_collection_listing_by_address_opensea") [asset_contract_address order_direction limit] collection_listing)
+                         (call "12D3KooWSD5PToNiLQwKDXsu8JSysCwUt8BVUJEqCHcDe7P5h45e" ("275ba8e1-a7c1-412f-a9bb-7d288343c3ac" "get_collection_listing_by_address_opensea") [asset_contract_address order_direction limit] collection_listing)
                          (call -relay- ("op" "noop") [])
                         )
                         (seq
@@ -299,7 +299,7 @@ export function get_all_collections_opensea(...args: any) {
                        )
                        (xor
                         (seq
-                         (call "12D3KooWSD5PToNiLQwKDXsu8JSysCwUt8BVUJEqCHcDe7P5h45e" ("948dcc44-6769-429c-a511-7f17f847e6af" "get_all_collections_opensea") [limit offset] collections)
+                         (call "12D3KooWSD5PToNiLQwKDXsu8JSysCwUt8BVUJEqCHcDe7P5h45e" ("275ba8e1-a7c1-412f-a9bb-7d288343c3ac" "get_all_collections_opensea") [limit offset] collections)
                          (call -relay- ("op" "noop") [])
                         )
                         (seq
